@@ -15,6 +15,7 @@ const MBTI = document.querySelector('#MBTI');
 const explain = document.querySelector('#explain');
 const image = document.querySelector('#result-img');
 const resultContainer = document.querySelector('.result-container');
+const index = document.querySelector('#index');
 
 const q = {
     1: {
@@ -348,6 +349,7 @@ function updateQuestion(){
     }
 
     pro.style.width = (100/12) * (num-1) +'%';
+    index = num + '/12';
 
     question.innerHTML = q[num].title
     type.innerHTML = q[num].type
