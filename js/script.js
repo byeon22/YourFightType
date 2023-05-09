@@ -13,9 +13,9 @@ const pro = document.querySelector('.progress-bar');
 const intro = document.querySelector('#intro');
 const MBTI = document.querySelector('#MBTI');
 const explain = document.querySelector('#explain');
+const index = document.querySelector('#index');
 const image = document.querySelector('#result-img');
 const resultContainer = document.querySelector('.result-container');
-const index = document.querySelector('#index');
 
 const q = {
     1: {
