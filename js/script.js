@@ -13,9 +13,9 @@ const pro = document.querySelector('.progress-bar');
 const intro = document.querySelector('#intro');
 const MBTI = document.querySelector('#MBTI');
 const explain = document.querySelector('#explain');
-const index = document.querySelector('#index');
 const image = document.querySelector('#result-img');
 const resultContainer = document.querySelector('.result-container');
+const index = document.querySelector('#index');
 
 const q = {
     1: {
@@ -349,7 +349,7 @@ function updateQuestion(){
     }
 
     pro.style.width = (100/12) * (num-1) +'%';
-    index = num + '/12';
+    index.innerHTML = num + '/12';
 
     question.innerHTML = q[num].title
     type.innerHTML = q[num].type
